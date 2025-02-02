@@ -1,0 +1,52 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.tooltip_container {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip_container span {
+  display: none;
+  background: #1e1d1d;
+  padding: 8px;
+  border: 1px solid #888;
+  border-radius: 12px;
+  min-height: 40px;
+  min-width: 120px;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+}
+.tooltip_container:hover span {
+  display: block;
+  position: absolute;
+  top: 48px;
+  animation: show_tooltip 0.2s ease-in-out;
+}
+
+@keyframes show_tooltip {
+  0% {
+    opacity: 0;
+    transform: translateY(-25px) scale(0.5);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
